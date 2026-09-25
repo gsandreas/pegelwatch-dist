@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PegelWatch Paketquelle</title>
+<style>
+:root{color-scheme:light dark;--bg:#fff;--fg:#1f2328;--muted:#59636e;--code:#f6f8fa}
+@media (prefers-color-scheme:dark){:root{--bg:#0d1117;--fg:#e6edf3;--muted:#9198a1;--code:#161b22}}
+body{background:var(--bg);color:var(--fg);font:16px/1.55 system-ui,sans-serif;max-width:760px;margin:0 auto;padding:24px 16px}
+h1{font-size:1.6em;margin-bottom:.2em}p.sub{color:var(--muted);margin-top:0}
+pre{background:var(--code);padding:12px;border-radius:6px;overflow-x:auto}code{font-size:.92em}
+table{border-collapse:collapse}td,th{padding:4px 12px 4px 0;text-align:left}
+</style></head><body>
+<h1>PegelWatch</h1>
+<p class="sub">Paketquelle für die Mess- und Steuerungssoftware (RIVERWatch · SEPWatch · PUMPWatch) auf dem Raspberry Pi</p>
+<h2>Installation</h2>
+<p>Auf einem frisch eingerichteten Raspberry Pi OS (64 bit):</p>
+<pre><code>curl -fsSL https://gsandreas.github.io/pegelwatch-dist/install.sh | sudo sh</code></pre>
+<p>Für eine Testanlage im Kanal <em>daily</em>:</p>
+<pre><code>curl -fsSL https://gsandreas.github.io/pegelwatch-dist/install.sh | sudo sh -s -- --channel daily</code></pre>
+<p>Danach im Browser <code>http://&lt;IP-des-Pi&gt;:8080/konfiguration</code> öffnen.</p>
+<h2>Aktueller Stand</h2>
+<table id="ch"><tr><td>stable</td><td>…</td></tr><tr><td>daily</td><td>…</td></tr></table>
+<p class="sub">Signaturschlüssel: <code>811C 0B63 D3FB FEDA 059C 008F 5CFB FAA9 8605 8508</code></p>
+<script>
+fetch('releases.json').then(r => r.json()).then(d => {
+  const rows = ['stable', 'daily'].map(c => '<tr><td>' + c + '</td><td>' + (d.channels[c] || '—') + '</td></tr>');
+  document.getElementById('ch').innerHTML = rows.join('');
+}).catch(() => {});
+</script>
+</body></html>

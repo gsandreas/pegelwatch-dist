@@ -1,0 +1,30 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Architectures: arm64
+Codename: daily
+Components: main
+Date: Fri, 25 Sep 2026 11:46:55 +0000
+Description: PegelWatch Paketquelle, Kanal daily
+Label: PegelWatch
+Origin: PegelWatch
+Suite: daily
+MD5Sum:
+ a1205959d6bde60e7ce229cf364d0026              698 main/binary-arm64/Packages
+ 669cd5ffbc9fc2b57845ec7c5b56f187              491 main/binary-arm64/Packages.gz
+SHA1:
+ 5eae92a24d624af8fcfb1c4b5826bfc04450cfc5              698 main/binary-arm64/Packages
+ 47e05d4af2685dd71d470194bb598fc0af6c6232              491 main/binary-arm64/Packages.gz
+SHA256:
+ 0e787b07703e9f8e72f5d785f18616f4f7a34fa11eba845506a5e5c60ba88b97              698 main/binary-arm64/Packages
+ 600222a86362d40757e028b14c85e466145d7df9aa89b6947ca632f438dfdaa6              491 main/binary-arm64/Packages.gz
+SHA512:
+ d398cf2e2673c84d62653594eb030fc7edc1d7541c7432de274894aca059d73d07670237ee6577108f33391014470ce2f3dd3b313307c71e5a607e42c6c064b2              698 main/binary-arm64/Packages
+ dbd249380860f869f42955d4239f59d2d1c47599037573a325220adcc6c1ef07ead7d67d1a1eef8357940fa1f649edd0d654d2720b09e30ca13706426b5e197d              491 main/binary-arm64/Packages.gz
+-----BEGIN PGP SIGNATURE-----
+
+iHUEARYKAB0WIQSBHAtj0/v+2gWcAI9c+/qphgWFCAUCarZfLwAKCRBc+/qphgWF
+CMV2AQCZFUeW5zqLdk3K72/NQoxk8RQXzH7+I2IGUZEWfLa1NAD+Ovfgs3PsftI3
+F8K6SEuQWuLeeIwsF+KKZrOv8ZTV/QI=
+=/JsH
+-----END PGP SIGNATURE-----

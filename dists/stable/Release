@@ -1,0 +1,20 @@
+Architectures: arm64
+Codename: stable
+Components: main
+Date: Fri, 25 Sep 2026 11:46:55 +0000
+Description: PegelWatch Paketquelle, Kanal stable
+Label: PegelWatch
+Origin: PegelWatch
+Suite: stable
+MD5Sum:
+ d41d8cd98f00b204e9800998ecf8427e                0 main/binary-arm64/Packages
+ 35c270444aff1698297b818b9823bb7a               29 main/binary-arm64/Packages.gz
+SHA1:
+ da39a3ee5e6b4b0d3255bfef95601890afd80709                0 main/binary-arm64/Packages
+ f45f0e8d967294c2999064da10a02d661abd0d6c               29 main/binary-arm64/Packages.gz
+SHA256:
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855                0 main/binary-arm64/Packages
+ 6d800e59ca41dddf7c8435ac74029513bc8ee65af025cb0e4e8ce077d30f80f5               29 main/binary-arm64/Packages.gz
+SHA512:
+ cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e                0 main/binary-arm64/Packages
+ 295b3d695df2acaae485c052360fe68a7602b8bca712965d260a517fd4ab070dceebfa1b3b0e8e3ae2d2f3a86dbc69dd4d6dabdbe35b0dcad9b9ae8eb02e3ee7               29 main/binary-arm64/Packages.gz
