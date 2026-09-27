@@ -1,0 +1,20 @@
+Architectures: arm64
+Codename: daily
+Components: main
+Date: Sun, 27 Sep 2026 05:37:52 +0000
+Description: PegelWatch Paketquelle, Kanal daily
+Label: PegelWatch
+Origin: PegelWatch
+Suite: daily
+MD5Sum:
+ 0b24c7c8000f98e12ba184c8ebd654d4             1397 main/binary-arm64/Packages
+ cc7e028b4498e8e6d9f927fcc61c4adc              625 main/binary-arm64/Packages.gz
+SHA1:
+ 101c14c0e5d532d231484b2195e4055ea25477da             1397 main/binary-arm64/Packages
+ 9606a3a614cb59e3e8b4dfd2bd4bb042190163e7              625 main/binary-arm64/Packages.gz
+SHA256:
+ 7979fc27b42a6955f1cfa64480d561b94edbdf1d78bdc2a5ededced32ad49c61             1397 main/binary-arm64/Packages
+ 7f2f8a799b47bcb70e38657c95e8adca47077c8cdf6a0f21f41d6a3a30385b32              625 main/binary-arm64/Packages.gz
+SHA512:
+ 1803a84d092e03269ff2dad70351806dfbdafdbb1614305046f10ce04126ae82b4ec699c3c80330dae216c0bcd236f7220c2a1961c9500c11642cc31d3360f4b             1397 main/binary-arm64/Packages
+ a57f1e5ba08c3262689bc59f3bba7e8e38bb50c9f41e057589190902ba803bce176008fd17a85d67631b3990a0b1834b5b289520d85f9ed0ba8d0ddf7ab58d03              625 main/binary-arm64/Packages.gz

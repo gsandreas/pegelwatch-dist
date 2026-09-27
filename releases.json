@@ -1,0 +1,31 @@
+{
+  "channels": {
+    "daily": "2026.09.27.073205+ge35fccc",
+    "stable": "2026.09.25.132347+g69b09ac"
+  },
+  "releases": [
+    {
+      "version": "2026.09.27.073205+ge35fccc",
+      "build": "2026-09-27 07:32:05 (e35fccc)",
+      "tag": "build-20260927-073205",
+      "uploaded_at": 1790487472,
+      "promoted_at": null,
+      "file": "pool/main/p/pegelwatch/pegelwatch_2026.09.27.073205+ge35fccc_arm64.deb",
+      "size": 16481900,
+      "sha256": "ab3b203cfdba7188733ff27bfc59d465188c7ae76f1218a193316a003237f17d",
+      "changelog": "- Updates ohne Cloud: Die Konfigurationsseite hat einen eigenen Abschnitt „Software-Updates“ mit Kanal (stable/daily), Auto-Update und dem Knopf „Jetzt installieren“. Die Anlage holt sich die Informationen direkt aus der öffentlichen Paketquelle.\n- Auto-Update installiert nur neuere Versionen und erst, wenn die Pumpe steht.\n- Der gewählte Kanal gilt jetzt auch für ein normales „apt upgrade“. Wer PegelWatch mit den üblichen apt-Läufen aktualisieren möchte, schaltet „Updates per apt erlauben“ ein.\n- Kanal und Auto-Update stehen jetzt unter [update] in der Konfiguration; bisherige Einstellungen unter [cloud] werden automatisch übernommen."
+    },
+    {
+      "version": "2026.09.25.132347+g69b09ac",
+      "build": "2026-09-25 13:23:47 (69b09ac)",
+      "tag": "build-20260925-132347",
+      "uploaded_at": 1790336815,
+      "promoted_at": 1790484390,
+      "file": "pool/main/p/pegelwatch/pegelwatch_2026.09.25.132347+g69b09ac_arm64.deb",
+      "size": 16457552,
+      "sha256": "e9c4146a027847e7942e0e08462027593fb18929c1d9e1666f9f051bfce5a560",
+      "changelog": "- Konfigurationsseite: Ist die installierte Version neuer als die im Kanal freigegebene, steht dort nicht mehr fälschlich „Update verfügbar“.\n- PegelWatch wird jetzt als Debian-Paket aus einer signierten Paketquelle verteilt. Updates bringen damit auch Dienst-Einstellungen, Dashboards, Dokumentation und die InfluxDB-Selbstheilung mit — auch auf Anlagen ohne SSH-Zugang.\n- Neue Anlagen lassen sich mit einem Befehl selbst einrichten: curl -fsSL https://gsandreas.github.io/pegelwatch-dist/install.sh | sudo sh\n- Updates werden per apt mit Signaturprüfung installiert; kommt der Dienst danach nicht hoch, wird automatisch die vorherige Version wiederhergestellt."
+    }
+  ],
+  "updated_at": 1790487472
+}

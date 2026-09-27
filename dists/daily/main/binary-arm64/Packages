@@ -1,0 +1,35 @@
+Package: pegelwatch
+Version: 2026.09.25.132347+g69b09ac
+Section: misc
+Priority: optional
+Architecture: arm64
+Maintainer: PegelWatch <gsandreas@users.noreply.github.com>
+Installed-Size: 34492
+Depends: systemd, adduser
+Recommends: polkitd, grafana
+Homepage: https://github.com/gsandreas/pegelwatch-dist
+Description: Mess- und Steuerungssoftware fuer Wasserpegel- und Pumpenueberwachung
+ auf dem Raspberry Pi (RIVERWatch, SEPWatch, PUMPWatch).
+Filename: pool/main/p/pegelwatch/pegelwatch_2026.09.25.132347+g69b09ac_arm64.deb
+Size: 16457552
+MD5sum: 6233d1a60dc0a5eaa4661ef375dded98
+SHA1: 7b98abe82255780ca99ffea3142ce40068c44d77
+SHA256: e9c4146a027847e7942e0e08462027593fb18929c1d9e1666f9f051bfce5a560
+
+Package: pegelwatch
+Version: 2026.09.27.073205+ge35fccc
+Section: misc
+Priority: optional
+Architecture: arm64
+Maintainer: PegelWatch <gsandreas@users.noreply.github.com>
+Installed-Size: 34507
+Depends: systemd, adduser
+Recommends: polkitd, grafana
+Homepage: https://github.com/gsandreas/pegelwatch-dist
+Description: Mess- und Steuerungssoftware fuer Wasserpegel- und Pumpenueberwachung
+ auf dem Raspberry Pi (RIVERWatch, SEPWatch, PUMPWatch).
+Filename: pool/main/p/pegelwatch/pegelwatch_2026.09.27.073205+ge35fccc_arm64.deb
+Size: 16481900
+MD5sum: 575f4dd6d666f69c02bbfaa6358ac031
+SHA1: 80c0ac50aaec7613ca21399d9502980d07933d17
+SHA256: ab3b203cfdba7188733ff27bfc59d465188c7ae76f1218a193316a003237f17d

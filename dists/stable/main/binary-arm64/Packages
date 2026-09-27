@@ -1,0 +1,17 @@
+Package: pegelwatch
+Version: 2026.09.25.132347+g69b09ac
+Section: misc
+Priority: optional
+Architecture: arm64
+Maintainer: PegelWatch <gsandreas@users.noreply.github.com>
+Installed-Size: 34492
+Depends: systemd, adduser
+Recommends: polkitd, grafana
+Homepage: https://github.com/gsandreas/pegelwatch-dist
+Description: Mess- und Steuerungssoftware fuer Wasserpegel- und Pumpenueberwachung
+ auf dem Raspberry Pi (RIVERWatch, SEPWatch, PUMPWatch).
+Filename: pool/main/p/pegelwatch/pegelwatch_2026.09.25.132347+g69b09ac_arm64.deb
+Size: 16457552
+MD5sum: 6233d1a60dc0a5eaa4661ef375dded98
+SHA1: 7b98abe82255780ca99ffea3142ce40068c44d77
+SHA256: e9c4146a027847e7942e0e08462027593fb18929c1d9e1666f9f051bfce5a560
