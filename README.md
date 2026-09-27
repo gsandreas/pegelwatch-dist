@@ -8,6 +8,11 @@ Dieses Repository enthält **keinen Quellcode**. Die Paketquelle liegt im
 Branch `gh-pages` und ist unter **https://gsandreas.github.io/pegelwatch-dist/**
 erreichbar; sie wird automatisch veröffentlicht und signiert.
 
+## Handbuch
+
+**[Handbuch für Betreiber](docs/handbuch.md)** — vom Auspacken bis zum laufenden Betrieb:
+Hardware, Installation, Anschluss, Kalibrierung, Bedienung, Updates, Fehlerhilfe.
+
 ## Installation
 
 Auf einem frisch eingerichteten Raspberry Pi OS (64 bit):
@@ -30,7 +35,11 @@ Danach im Browser `http://<IP-des-Pi>:8080/konfiguration` öffnen.
 - **daily** – jeder neue Stand, für Test- und Pilotanlagen.
 
 Welchen Kanal eine Anlage bezieht, entscheidet ihr Betreiber in der
-Konfiguration der Anlage. Vorgehalten werden die letzten 5 daily- und
+Konfiguration der Anlage.
+
+Updates installiert die Anlage auf Knopfdruck, automatisch oder — wenn in der
+Konfiguration erlaubt — mit einem normalen `apt upgrade` (siehe Handbuch,
+Kapitel 13). Vorgehalten werden die letzten 5 daily- und
 3 stable-Versionen.
 
 ## Signatur
