@@ -61,10 +61,10 @@ in der Weboberfläche ein; sie bestimmt auch den angezeigten Namen.
 
 | Teil | Woher | Hinweis |
 |---|---|---|
-| **Sensorplatine** mit AD-Wandler (ADS1115), Präzisionsreferenz (LT1461) und Drucksensor(en) MPXV5050DP | von Ihrem PegelWatch-Anbieter | bestückt und geprüft; Aufbau 2 ggf. mehrere Platinen |
+| **Sensorplatine** mit AD-Wandler (ADS1115), gefilterter 5-V-Sensorversorgung und Drucksensor(en) MPXV5050DP | von Ihrem PegelWatch-Anbieter | bestückt und geprüft; Aufbau 2 ggf. mehrere Platinen |
 | **Raspberry Pi 4 oder 5**, mind. 4 GB RAM | selbst | Pi 4 mit 2 GB geht nur eingeschränkt |
 | **SD-Karte** (Typ A2, ab 32 GB) oder SSD | selbst | |
-| **Netzteil** für den Pi (Original-Netzteil empfohlen) | selbst | ein schwaches Netzteil verursacht Messfehler |
+| **Netzteil** für den Pi (Original-Netzteil, 5,1 V) | selbst | ein schwaches Netzteil verursacht Messfehler; die Sensorplatine wird darüber mitversorgt |
 | **Luftschlauch** (Silikon/PVC, 4 mm innen) und **Staudruckglocke** bzw. Tauchrohr | selbst oder Anbieter | Verbindung Messstelle ↔ Sensor, muss **luftdicht** sein |
 | Netzwerk (LAN-Kabel oder WLAN) | vorhanden | Pi und Ihr PC/Handy im selben Netz |
 | *optional* HDMI-Bildschirm 1024×600 | selbst | große Vollbild-Anzeige (Kiosk) |
@@ -167,11 +167,19 @@ Pin-Zählung am Pi (Stiftleiste oben links, Pin 1 = quadratisches Lötauge):
      SCL [ 5] [ 6] GND   ← GND
 ```
 
+> ⚠️ Die Sensorplatine wird **ausschließlich mit 5 V** versorgt. Den
+> **3,3-V-Pin** (Pin 1/17) **nicht** anschließen — der AD-Wandler und die
+> Sensoren laufen an 5 V, die Anpassung der I²C-Leitungen an den Pi erledigt
+> die Platine selbst.
+>
+> Auch **Pin 27/28 bleiben frei**: Sie sind beim Raspberry Pi für den
+> Kennungsspeicher (HAT-EEPROM) aufsteckbarer Erweiterungsplatinen reserviert.
+
 **Kanäle der Platine** (Klemmen):
 
 | Klemme | Bedeutung | in der Software |
 |---|---|---|
-| J4 („CH1") | **Referenz** (fest, kein Sensor) | Referenzkanal **0** |
+| J4 („CH1") | **Referenz** — misst die Sensorversorgung (fest, kein Sensor) | Referenzkanal **0** |
 | J3 („CH2") | **erster Drucksensor** | Kanal **1** |
 | J1 („CH3") | zweiter Drucksensor | Kanal 2 |
 | J2 („CH4") | dritter Drucksensor | Kanal 3 |
